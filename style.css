@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-size: 1.9rem;
+  line-height: 3rem;
+}
+
+#navbar {
+  align-items: center; /* Alinhamento horizontal */
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  height: 6rem;
+  justify-content: flex-end;
+  position: fixed; /* Navbar sempre visível */
+  width: 100%;
+}
+
+.navbar-list {
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  font-size: 3rem;
+  list-style: none;
+  margin-right: 3rem;
+}
+
+a {
+  color: #CCCCCC;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+#welcome-section {
+  align-items: center;
+  background-color: #292A2C;
+  color: #CCCCCC;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  height: 100vh;
+  justify-content: center;
+  width: 100%; /* 100% da altura da janela de visualização */
+} 
+
+h1 {
+  font-size: 8rem;
+  padding: 5rem;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 7rem;
+    line-height: 8rem;
+  }
+}
+
+#welcome-section p,
+#contacts p {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 1.5rem;
+}
+
+#projects {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+h2 {
+  font-size: 6rem;
+  padding: 5rem;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  h2 {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+}
+
+.project-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media (max-width: 950px) {
+  .project-links {
+    flex-direction: column;
+  }
+}
+
+.project-tile {
+  margin: 2rem;
+}
+
+.project-tile p {
+  font-size: 3rem;
+}
+
+.project-img {
+  border: 5px solid gray;
+  width: 35rem;
+}
+
+#contacts {
+  align-items: center;
+  background-color: #292A2C;
+  color: #CCCCCC;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  width: 100%;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: row;
+  padding: 7rem;
+}
+
+@media (max-width: 950px) {
+  .contact-links {
+    flex-direction: column;
+    line-height: 5rem;
+  }
+}
+
+footer {
+  align-items: center; /* Alinhamento horizontal */
+  display: flex;
+  flex-direction: row;
+  height: 6rem;
+  justify-content: center;
+}
